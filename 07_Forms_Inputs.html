@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Inputs</title>
+</head>
+<body>
+    <form action="process.php">
+        <!-- Text -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter an email">
+        </div>
+        <!-- Message -->
+        <div>
+            <label for="Message">Message</label>
+            <textarea name="Message" id="Message" cols="50" rows="5"></textarea>
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="Gender">Gender</label>
+            <select name="Gender" id="Gender">
+                <option value="AMAB" selected>AMAB</option>
+                <option value="AFAB">AFAB</option>
+            </select>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <!-- Date -->
+        <div>
+            <label for="date">Birthate</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <!-- Radio -->
+        <div>
+            <label for="Membership">Membership</label>
+            <input type="radio" name="membership" value="Basic" id="Membership" checked> Basic
+            <input type="radio" name="membership" value="Premium" id="Membership"> Premium
+            <input type="radio" name="membership" value="Platinum" id="Membership"> Platinum
+        </div>
+        <!-- Checkbox -->
+        <div>
+            <label for="Hobbies">Hobbies</label>
+            <input type="checkbox" name="Hobby" value="Soccer" id="Hobbies"> Socccer
+            <input type="checkbox" name="Hobby" value="Basketball" id="Hobbies"> Basketball
+            <input type="checkbox" name="Hobby" value="Tennis" id="Hobbies"> Tennis
+        </div>
+        <!-- Input Submit -->
+        <input type="submit" value="Submit">
+        <!-- Button Tag -->
+        <!-- <button type="submit">Submit</button> -->
+        <!-- Button Reset -->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
